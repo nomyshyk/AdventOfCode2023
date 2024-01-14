@@ -14,8 +14,7 @@ public class Day1 {
             "one", "two", "three", "four", "five", "six", "seven", "eight", "nine");
     private static List<String> ints = List.of("0","1", "2", "3", "4", "5", "6", "7" , "8", "9",
             "1", "2", "3", "4", "5", "6", "7" , "8", "9");
-    // 54081
-    // 54649
+
     public static long execute() {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("input_day1.txt");

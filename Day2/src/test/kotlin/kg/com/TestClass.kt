@@ -35,6 +35,5 @@ class TestClass {
 
         Day2().execute()
 
-        //assertTrue(Day2().isPossibleTask2(inputList.toTypedArray()) == 2286L)
     }
 }

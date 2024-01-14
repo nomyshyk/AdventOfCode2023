@@ -5,15 +5,12 @@ import kotlin.math.max
 class Day2 {
 
     fun execute() {
-        // 2076 - 1
         val arrayOf = arrayListOf<String>()
 
         val inputStream = Day2::class.java.getResource("/input_day2.txt").openStream()
         inputStream.bufferedReader()
-            //.readLine()
             .forEachLine { arrayOf.add(it) }
 
-        // val result = isPossibleTask1(arrayOf.toTypedArray())
         val result = isPossibleTask2(arrayOf.toTypedArray())
         println("total result is $result")
     }
@@ -22,7 +19,6 @@ class Day2 {
     // "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green"
     fun isPossibleTask1(lines : Array<String>) : Long {
 
-//        val finalList = mutableListOf<List<Map<String, Int>>>()
         val finalList = mutableListOf<List<Triple<Int, Int, Int>>>()
 
         var summa = 0L
@@ -93,7 +89,6 @@ class Day2 {
         var summa = 0L
         for (line in lines) {
             val gameNSets = line.split(":")
-            // val game = gameNSets[0].replace("Game ", "")
             val sets = gameNSets[1].split(";")
 
             val setList = mutableListOf<Triple<Int, Int, Int>>()
